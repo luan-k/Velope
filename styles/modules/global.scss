@@ -1,0 +1,115 @@
+@use "base/tailwind";
+@use "base/fonts";
+@use "base/animations";
+
+@use "abstracts/variables";
+
+@use "components/search-overlay";
+@use "components/titles";
+@use "components/btn-nav";
+@use "components/btn-wk";
+@use "components/card";
+@use "components/product-slider";
+@use "components/product-card";
+@use "components/hr";
+@use "components/pagination";
+@use "components/card-servicos";
+
+@use "layout/navbar";
+@use "layout/footer";
+
+@use "pages/home/slider";
+@use "pages/home/bem-vindo";
+@use "pages/home/depoimentos";
+@use "pages/home/servicos";
+@use "pages/home/cursos";
+@use "pages/home/instrutores";
+@use "pages/servicossingle/layout";
+@use "pages/contato";
+@use "pages/single/calendario";
+@use "pages/single/instructor";
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+/* ======================================== */
+/* ================scroolbar=================== */
+/* ======================================== */
+/* width */
+::-webkit-scrollbar {
+	width: 0.7vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--pec-blue-light);
+	border-radius: 2px;
+	transition: background-color 0.8s;
+}
+::-webkit-scrollbar-corner {
+	border-radius: 2px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	--tw-bg-opacity: 1;
+	background-color: var(--pec-blue-dark);
+}
+/* ======================================== */
+/* ================scroolbar=================== */
+/* ======================================== */
+html {
+	/* this defines what one rem is */
+	font-size: 62.5%;
+}
+
+/* a:hover {
+    color: inherit !important;
+    text-decoration: none !important;
+  } */
+
+body {
+	background-color: #08061c;
+	box-sizing: border-box; /* Padding and Margin are no longer part of the width and height of the element */
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+nav {
+	font-family: "poppins";
+}
+.wraper {
+	overflow-x: hidden;
+}
+
+//script on plugin
+#viewerContainer {
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-ms-user-select: none !important;
+	user-select: none !important;
+}
+#viewerContainer .textLayer {
+	user-select: none !important;
+}
+#viewerContainer * {
+	cursor: default;
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-ms-user-select: none !important;
+	user-select: none !important;
+}
+#documentPropertiesOverlay {
+	display: none !important;
+}
+#documentProperties {
+	display: none !important;
+}
