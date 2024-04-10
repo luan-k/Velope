@@ -1,6 +1,6 @@
 import { Fancybox } from "@fancyapps/ui";
 import "../../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css";
-import { pt } from "@fancyapps/ui/dist/fancybox/l10n/pt.esm.js";
+import { pt } from "../../../node_modules/@fancyapps/ui/dist/fancybox/l10n/pt.esm.js";
 
 import { Carousel } from "@fancyapps/ui/dist/carousel/carousel.esm.js";
 import "@fancyapps/ui/dist/carousel/carousel.css";

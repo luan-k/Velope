@@ -12,52 +12,24 @@ import Search from "./modules/Search";
 
 var search = new Search();
 
-$(function () {
-	var ulLi = $("nav ul > li"),
-		fa = $("nav ul > li:last-of-type a .fa");
+var isMenuOpen = false; // Initially, the menu is closed
 
-	$("nav ul").append("<ol></ol>");
+function toggleMenu() {
+	isMenuOpen = !isMenuOpen; // Toggle the value of isMenuOpen
 
-	$("nav").each(function () {
-		for (var i = 0; i <= ulLi.length - 2; i++) {
-			$("nav ul > ol").append("<li>" + i + "</li>");
-			$("nav ul > ol > li")
-				.eq(i)
-				.html(ulLi.eq(i + 0).html());
-		}
-	});
+	// If the menu is open, add the 'open' class to the button
+	// If the menu is closed, remove the 'open' class from the button
+	if (isMenuOpen) {
+		button.classList.add("open");
+		mobileList.classList.add("visible"); // Show the list
+	} else {
+		button.classList.remove("open");
+		mobileList.classList.remove("visible"); // Hide the list
+	}
+}
 
-	$("nav ul > li:last-of-type").on("click", function () {
-		fa.toggleClass("fa-bars");
-		fa.toggleClass("fa-times");
-		$(this).parent().children("ol").slideToggle(1000);
-	});
-});
+var button = document.getElementById("wk-hamburger");
+var mobileList = document.querySelector(".header-wk__list--mobile"); // Get the mobile list
 
-/*
-//script on plugin
-document.addEventListener(
-	"DOMContentLoaded",
-	function () {
-		// your code here
-
-		setTimeout(loadAfterTime, 1000);
-
-		function loadAfterTime() {
-			// code you need to execute goes here.
-
-			const pdfSelected = document.getElementById("viewerContainer");
-			const pdfChildren = pdfSelected.getElementsByTagName('*');
-			console.log(pdfSelected);
-			console.log(pdfChildren);
-      const numpdf = Array.from(pdfChildren);
-			console.log(numpdf);
-			for(var i = 0; i < numpdf.length; i++){
-        console.log(pdfChildren[i]);
-        pdfChildren[i].setAttribute("oncontextmenu" , "return false");
-      }
-		}
-	},
-	false
-);
-*/
+// Add click event listener to the button
+button.addEventListener("click", toggleMenu);
