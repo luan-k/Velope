@@ -33,3 +33,51 @@ var mobileList = document.querySelector(".header-wk__list--mobile"); // Get the 
 
 // Add click event listener to the button
 button.addEventListener("click", toggleMenu);
+
+// ===================
+
+const words = [
+	"Do básico ao avançado...",
+	"Presencial ou online.",
+	"A melhor escola para sua profissionalização.",
+];
+let i = 0;
+let timer;
+
+function typingEffect() {
+	let word = words[i].split("");
+	var loopTyping = function () {
+		if (word.length > 0) {
+			document.getElementById("word").innerHTML += word.shift();
+		} else {
+			// Add a delay before starting the deleting effect
+			setTimeout(deletingEffect, 3000); // 1000 milliseconds = 1 second
+			return false;
+		}
+		timer = setTimeout(loopTyping, 90);
+	};
+	loopTyping();
+}
+
+function deletingEffect() {
+	let word = words[i].split("");
+	var loopDeleting = function () {
+		if (word.length > 0) {
+			word.pop();
+			document.getElementById("word").innerHTML = word.join("");
+		} else {
+			if (words.length > i + 1) {
+				i++;
+			} else {
+				i = 0;
+			}
+			// Add a delay before starting the typing effect
+			setTimeout(typingEffect, 1000); // 1000 milliseconds = 1 second
+			return false;
+		}
+		timer = setTimeout(loopDeleting, 15);
+	};
+	loopDeleting();
+}
+
+typingEffect();

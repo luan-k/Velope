@@ -5,6 +5,16 @@
         <?php echo do_shortcode('[ssslider id="5"]') ?>
     </section>
 
+	<!-- Do Básico ao Avançado -->
+	<section class="text-basic-from-advanced">
+		<div class="container text-basic-from-advanced__container">
+			 <p class="header-sub-title" id="word"></p><p class="header-sub-title blink">|</p>
+			<!-- Do <span>básico</span> ao <span>avançado</span>... -->
+			<!-- presencial <span>ou</span> online... -->
+			<!-- a melhor <span>escola</span> para sua <span>profissionalização</span>... -->
+		</div>
+	</section>
+
     <!-- cursos -->
     <section class="cursos text-center text-white pb-16 md:pb-32 pt-20 md:pt-44 relative" style="background-image: url(<?php echo get_theme_file_uri('./images/BackgroundSite.png')?>)">
 		<div class="container">

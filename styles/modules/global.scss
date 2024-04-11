@@ -113,3 +113,38 @@ nav {
 #documentProperties {
 	display: none !important;
 }
+
+.text-basic-from-advanced {
+	align-items: center;
+	background: #141414;
+	color: #e74e1c;
+	display: flex;
+	font-size: 4rem;
+	font-style: normal;
+	font-weight: 700;
+	height: 12rem;
+	justify-content: center;
+	line-height: normal;
+	text-align: center;
+	@apply font-philosopher;
+	span {
+		color: #e74e1c;
+	}
+	&__container {
+		align-content: center;
+		align-items: center;
+		color: inherit;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+.blink {
+	animation: blink 0.7s infinite;
+}
+@keyframes blink {
+	to {
+		opacity: 0;
+	}
+}
