@@ -117,6 +117,7 @@ nav {
 .text-basic-from-advanced {
 	align-items: center;
 	background: #141414;
+	border-bottom: 6px solid #e74e1c;
 	color: #e74e1c;
 	display: flex;
 	font-size: 4rem;
@@ -126,6 +127,7 @@ nav {
 	justify-content: center;
 	line-height: normal;
 	text-align: center;
+
 	@apply font-philosopher;
 	span {
 		color: #e74e1c;
@@ -138,6 +140,10 @@ nav {
 		flex-direction: row;
 		justify-content: center;
 	}
+
+	@media (max-width: 768px) {
+		font-size: 2.1rem;
+	}
 }
 
 .blink {
@@ -146,5 +152,102 @@ nav {
 @keyframes blink {
 	to {
 		opacity: 0;
+	}
+}
+
+.cursos-about-us {
+	@apply font-philosopher;
+	background-attachment: fixed;
+	background-blend-mode: screen, normal;
+	background-color: #141414;
+	background-position: center left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 6rem 12rem;
+	.image-wrapper {
+		align-items: center;
+		display: flex;
+		img {
+			filter: drop-shadow(0px 0px 65.9px rgba(0, 0, 0, 0.7));
+		}
+	}
+	.cursos-about-us__title {
+		color: #fff;
+		font-family: inherit;
+		font-size: 6.9397rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		span {
+			color: #e74e1c;
+		}
+	}
+	p {
+		color: #f7f7f7;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 179%;
+		@apply font-poppins;
+	}
+	.wk-btn {
+		align-items: center;
+		background: #e74e1c;
+		color: #101010;
+		display: flex;
+		font-family: "Inter";
+		font-size: 1.8rem;
+		font-style: normal;
+		font-weight: 600;
+		gap: 1.1rem;
+		justify-content: center;
+		line-height: 150%;
+		margin-top: 2.6rem;
+		padding: 1.1rem 2.1rem;
+		transition: all 0.3s;
+		&:hover {
+			background: #c83c0d;
+		}
+	}
+	.content-wrapper {
+		align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		gap: 0.8rem;
+		justify-content: center;
+	}
+	.cursos-about-us__numbers {
+		align-items: stretch;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 2.7rem;
+		justify-content: flex-start;
+		margin-top: 8rem;
+		.number-card {
+			align-items: center;
+			backdrop-filter: blur(2px);
+			background: rgba(60, 60, 60, 0.42);
+			color: #fff;
+			display: flex;
+			font-size: 1.8175rem;
+			font-style: normal;
+			font-weight: 400;
+			gap: 1rem;
+			justify-content: center;
+			line-height: 179%;
+			padding: 0.8rem 1.2rem;
+			@apply font-poppins;
+			h2 {
+				font-family: inherit;
+			}
+		}
+	}
+	@media (max-width: 1024px) {
+		padding: 6rem 0;
+		.cursos-about-us__numbers {
+			align-items: flex-start;
+			flex-direction: column;
+		}
 	}
 }

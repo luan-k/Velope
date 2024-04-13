@@ -15,6 +15,51 @@
 		</div>
 	</section>
 
+	<section class="cursos-about-us" style="background-image: url(<?php echo get_theme_file_uri( './images/bg-quem-somos-2.png' ); ?>)">
+		<div class="container">
+			<div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+				<div class="image-wrapper">
+					<img src="<?php echo get_theme_file_uri('./images/about-us-image.png') ?>" alt="Imagem quem somos">
+				</div>
+				<div class="content-wrapper">
+					<?php echo file_get_contents(get_theme_file_path('./images/logo-icon.svg'));?>
+					<h1 class="cursos-about-us__title">Sobre a <span>Velope</span></h1>
+					<p>
+						Há mais de 20 anos atuando no mercado automotivo,
+						com grande know how em manutenção preventiva no
+						segmento de transmissões automáticas e lubrificação,
+						o grupo PECMOTORS agora também possui cursos
+						para aprimorar ainda mais a qualificação técnica.
+					</p>
+					<a href="/sobre-nos" class="wk-btn">
+						Saiba Mais
+						<?php echo file_get_contents(get_theme_file_path('./images/arrow-right.svg'));?>
+					</a>
+				</div>
+				<div class="cursos-about-us__numbers col-span-2">
+					<div class="number-card">
+						<?php echo file_get_contents(get_theme_file_path('./images/time.svg'));?>
+						<h2 class="number-card-title">
+							Há mais de 20 anos ensinando
+						</h2>
+					</div>
+					<div class="number-card">
+						<?php echo file_get_contents(get_theme_file_path('./images/pencil.svg'));?>
+						<h2 class="number-card-title">
+							Mais de X Cursos
+						</h2>
+					</div>
+					<div class="number-card">
+						<?php echo file_get_contents(get_theme_file_path('./images/pin.svg'));?>
+						<h2 class="number-card-title">
+							Cursos presenciais e online
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
     <!-- cursos -->
     <section class="cursos text-center text-white pb-16 md:pb-32 pt-20 md:pt-44 relative" style="background-image: url(<?php echo get_theme_file_uri('./images/BackgroundSite.png')?>)">
 		<div class="container">
