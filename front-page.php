@@ -61,7 +61,7 @@
 	</section>
 
     <!-- cursos -->
-    <section class="cursos text-center text-white pb-16 md:pb-32 pt-20 md:pt-44 relative" style="background-image: url(<?php echo get_theme_file_uri('./images/BackgroundSite.png')?>)">
+    <section class="cursos text-center text-white pb-16 md:pb-32 pt-20 md:pt-44 relative" >
 		<div class="container">
     	   <?php the_content(); ?>
 		</div>

@@ -22,44 +22,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_6248e583fee65",
-            "label": "Nossos Cursos Subtítulo",
-            "name": "nossos_cursos_subtitle",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_6248e5d3fee66",
-            "label": "Nossos Cursos Descrição",
-            "name": "nossos_cursos_description",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
-        },
-        {
             "key": "field_6248e5f4fee67",
             "label": "Nossos Cursos Post 1",
             "name": "nossos_cursos_post_1",
@@ -102,6 +64,28 @@
             "multiple": 0,
             "return_format": "object",
             "ui": 1
+        },
+        {
+            "key": "field_661adbe9cef1e",
+            "label": "Nossos Cursos Post 3",
+            "name": "nossos_cursos_post_3",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
         }
     ],
     "location": [
@@ -121,5 +105,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1687894049
+    "modified": 1713036746
 }
