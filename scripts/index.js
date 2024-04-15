@@ -8,6 +8,8 @@ import "./modules/slick-config/product-slider";
 import "./modules/scrool-up-display-menu";
 import "./modules/slider-next";
 import "./modules/config/fancyapps";
+import "../slick/slick.min.js";
+import "./modules/slick-config/slick";
 import Search from "./modules/Search";
 
 var search = new Search();

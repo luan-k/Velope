@@ -67,114 +67,43 @@
 		</div>
     </section>
 
-    <!-- marcas -->
-    <section class="bem-vindo">
-        <div class="grid grid-cols-1 md:grid-cols-2 space-x-9 h-full pt-40 pb-96 md:pb-80 px-3 md:px-20">
-            <div class="container hidden md:block pt-40">
-                <div class="composition">
-                    <img data-anime="top" srcset="<?php echo get_theme_file_uri('./images/quem-somos-1.jpg')?> 300w, <?php echo get_theme_file_uri('./images/quem-somos-1-large.jpg ')?>1000w"
-                        sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                        alt="Photo 1"
-                        class="composition__photo composition__photo--p1"
-                        src="<?php echo get_theme_file_uri('./images/quem-somos-1-large.jpg')?>">
-                    <img data-anime="bottom" srcset="<?php echo get_theme_file_uri('./images/quem-somos-2.jpg')?> 300w, <?php echo get_theme_file_uri('./images/quem-somos-2-large.jpg')?> 1000w"
-                                    sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                        alt="Photo 2"
-                        class="composition__photo composition__photo--p2"
-                        src="<?php echo get_theme_file_uri('./images/quem-somos-2-large.jpg')?>">
 
-                    <img data-anime="right" srcset="<?php echo get_theme_file_uri('./images/quem-somos-4.jpg ')?> 300w, <?php echo get_theme_file_uri('./images/quem-somos-4.jpg')?> 1000w"
-                        sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                        alt="Photo 3"
-                        class="composition__photo composition__photo--p3"
-                        src="<?php echo get_theme_file_uri('./images/quem-somos-4.jpg')?>">
+	<section class="marcas">
+		<div class="container">
+			<h2 class="marcas__title" data-anime="top">
+				Confira nossos parceiros:
+			</h2>
+			<div class="marcas__carrousel max-w-full" data-anime="bottom">
+				<div class="marca">
+					<img src="<?php echo get_theme_file_uri('./images/1testimonials.png')?>" alt="Marca 1">
+				</div>
+				<div class="marca">
+					<img src="<?php echo get_theme_file_uri('./images/2testimonials.png')?>" alt="Marca 2">
+				</div>
+				<div class="marca">
+					<img src="<?php echo get_theme_file_uri('./images/3testimonials.png')?>" alt="Marca 3">
+				</div>
+				<div class="marca">
+					<img src="<?php echo get_theme_file_uri('./images/4testimonials.png')?>" alt="Marca 4">
+				</div>
+				<div class="marca">
+					<img src="<?php echo get_theme_file_uri('./images/5testimonials.png')?>" alt="Marca 5">
+				</div>
+				<div class="marca">
+					<img src="<?php echo get_theme_file_uri('./images/6testimonials.png')?>" alt="Marca 6">
+				</div>
+			</div>
+		</div>
+	</section>
 
-                </div>
-            </div>
-            <div class="space-y-9 text-pec-graymid">
-                <h2 class="title font-poppins font-bold text-center" data-anime="top">Sobre Nós</h2>
-                <p class="generic-text text-4xl" data-anime="right">
-                    Há mais de 20 anos atuando no mercado automotivo,
-                    com grande know how em manutenção preventiva no
-                    segmento de transmissões automáticas e lubrificação,
-                    o grupo PECMOTORS agora também possui cursos para
-                    aprimorar ainda mais a qualificação técnica de nossos clientes.
-                </p>
-                <p class="generic-text text-4xl" data-anime="right">
-                    Já são mais de 500 alunos certificados.
-                    Nesse anseio de sempre passar informações
-                    de alta qualidade a nossos parceiros,
-                    criamos o nosso Centro Técnico Pecmotors
-                    em Curitiba, ambiente conceito para você aprender mais.
-
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-36 mt-9" data-anime="bottom">
-                    <div class="btn-wraper justify-start mb-9 md:mb-0">
-                        <a href="<?php echo esc_url(site_url('/sobre-nos')); ?>" class="btn-wk flex items-center justify-center bg-pec-bluedark text-white rounded-full py-6 px-9 w-full text-center">
-                            Saiba Mais
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- DEPOIMENTOS -->
-    <section class="depoimentos px-0 text-center text-white relative" id="depoimentos" data-anime="bottom">
-        <h2 class="cursos__title--front title font-bold w-11/12 md:w-1/3 m-auto" data-anime="right">
-            O que os alunos dizem sobre
-        </h2>
-        <h3 data-anime="left" class="cursos__title--cursive mt-3 font-playfair text-pec-bluelight italic text-7xl font-bold w-11/12 md:w-1/3 m-auto">
-            nossos cursos
-        </h3>
-        <div data-anime="right" class="border-b-4 border-pec-bluelight w-1/12 mx-auto mt-16 mb-80"></div>
-
-        <div class="depoimentos__wrapper relative slider slider_depoimentos pb-12" style="background-image: url(<?php echo get_theme_file_uri('./images/depoimentos.jpg') ?>)">
-            <input id="radio-depoimentos" type="radio" name="slider-depoimentos" title="slide1" checked="checked" class="slider__nav radio-depoimentos" data-anime="left" />
-            <input id="radio-depoimentos-1" type="radio" name="slider-depoimentos" title="slide2" class="slider__nav radio-depoimentos" data-anime="bottom" />
-            <input id="radio-depoimentos-2" type="radio" name="slider-depoimentos" title="slide3" class="slider__nav radio-depoimentos" data-anime="right" />
-            <div class="depoimentos__slider-wrapper slider__inner slider__inner_depoimentos" >
-                <div class="depoimentos__slide relative slider__contents" id="slide-1">
-                    <img src="<?php echo get_theme_file_uri('/images/depoimentos-1.jpg') ?>" class="depoimentos__foto" data-anime="bottom" alt="">
-                    <div class="depoimentos__foto--border"></div>
-                    <div class="depoimentos__inner-wrapper text-white">
-                        <div class="depoimentos__content text-center text-3xl leading-loose">
-                            O curso foi na medida, muito bom para quem quer seguir
-                            carreira na área, o instrutor é muito bom com a didática
-                            é fácil de entender e faz as pessoas interagirem o que é importante.
-                        </div>
-                        <div class="depoimentos__title text-4xl mt-20 font-poppins text-center font-bold">VALDECIR</div>
-                        <div class="depoimentos__subtitle text-3xl mt-6 text-pec-bluelight text-center">VALDECIR AUTOMÁTICOS</div>
-                    </div>
-                </div>
-                <div class="depoimentos__slide relative slider__contents" id="slide-2">
-                    <img src="<?php echo get_theme_file_uri('/images/depoimentos-2.jpg') ?>" class="depoimentos__foto" data-anime="bottom" alt="">
-                    <div class="depoimentos__foto--border"></div>
-                    <div class="depoimentos__inner-wrapper text-white">
-                        <div class="depoimentos__content text-center text-3xl leading-loose">
-                            Curso top demais, instrutor nota 10, explicação bem detalhada.
-                        </div>
-                        <div class="depoimentos__title text-4xl mt-20 font-poppins text-center font-bold">Fernando </div>
-                        <div class="depoimentos__subtitle text-3xl mt-6 text-pec-bluelight text-center">MERCADO DO ÓLEO</div>
-                    </div>
-                </div>
-                <div class="depoimentos__slide relative slider__contents" id="slide-3">
-                    <img src="<?php echo get_theme_file_uri('/images/depoimentos-3.jpg') ?>" class="depoimentos__foto" data-anime="bottom" alt="">
-                    <div class="depoimentos__foto--border"></div>
-                    <div class="depoimentos__inner-wrapper text-white">
-                        <div class="depoimentos__content text-center text-3xl leading-loose">
-                            Gostei muito do curso, o instrutor têm excelente didática, superou as expectativas.
-                        </div>
-                        <div class="depoimentos__title text-4xl mt-20 font-poppins text-center font-bold">DEMA</div>
-                        <div class="depoimentos__subtitle text-3xl mt-6 text-pec-bluelight text-center">BRAVO LUBRIFICANTES</div>
-                    </div>
-                </div>
-            </div>
-            <div class="depoimentos__overlay"></div>
-        </div>
-
-    </section>
+	<!-- <section class="testimonials">
+		<div class="container">
+			<h2 class="testimonials__title">
+				O que os clientes dizem sobre a Velope
+			</h2>
+			<p>Lorem ipsum dolor sit amet consectetur. Est ultricies felis iaculis fermentum. Facilisis facilisi neque nisi risus amet convallis. Cras ornare phasellus augue nibh tristique purus donec ipsum diam. Elit ligula nulla mi eget id lectus.</p>
+		</div>
+	</section> -->
 
     <section class="instrutores pb-16 md:pb-32 pt-20 md:pt-44 relative" style="background-image: url(<?php echo get_theme_file_uri('./images/BackgroundSite.png')?>)">
         <div class="instrutores__wrapper relative slider slider_instrutores" data-anime="right">
