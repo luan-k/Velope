@@ -25,12 +25,13 @@
 @use "pages/home/cursos";
 @use "pages/home/instrutores";
 @use "pages/home/marcas";
+@use "pages/home/testimonials";
 @use "pages/servicossingle/layout";
 @use "pages/contato";
 @use "pages/single/calendario";
 @use "pages/single/instructor";
 
-@import "../../slick/slick.scss";
+@use "../../slick/slick.scss";
 
 *,
 *::after,

@@ -1,0 +1,104 @@
+.testimonials {
+	background-attachment: fixed;
+	background-blend-mode: overlay, normal;
+	background-color: rgba(26, 26, 26, 0.85);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 6.1rem 0;
+	&__header {
+		margin: auto auto 4rem auto;
+		width: 50%;
+	}
+	&__title {
+		color: #f5f6fe;
+		font-size: 4rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		margin-bottom: 2.1rem;
+		text-align: center;
+		@apply font-philosopher;
+		span {
+			color: #e74e1c;
+		}
+	}
+	&__text {
+		color: #e8e8e8;
+		font-family: "Poppins", sans-serif;
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-align: center;
+	}
+	.testimonial {
+		align-items: center;
+		align-items: center;
+		backdrop-filter: blur(6px);
+		background: rgba(20, 20, 20, 0.5);
+		border: 1.145px solid #e74e1c;
+		border-radius: 1.4rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+		overflow: hidden;
+		padding: 3.8rem;
+		img {
+			border-radius: 50%;
+			height: auto;
+			width: 10rem;
+		}
+		&__text {
+			color: #d7e2ec;
+			font-family: "Poppins", sans-serif;
+			font-size: 1.8314rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			text-align: center;
+		}
+		&__stars {
+			align-items: flex-start;
+			display: flex;
+			gap: 0.3281rem;
+		}
+		&__name {
+			color: #d7e2ec;
+			font-family: "Poppins", sans-serif;
+			font-size: 1.6025rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+		}
+		&__wrapper {
+			@apply mx-8;
+		}
+	}
+}
+
+.arrow-button {
+	align-items: center;
+	aspect-ratio: 1;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	height: 4.6rem;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 4.6rem;
+}
+.right-arrow {
+	right: 0px;
+	z-index: 89;
+}
+.left-arrow {
+	left: 0px;
+	z-index: 89;
+}

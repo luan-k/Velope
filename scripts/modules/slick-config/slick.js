@@ -18,3 +18,29 @@ $(".marcas__carrousel").slick({
 		},
 	],
 });
+$(".testimonials__carousel").slick({
+	autoplay: true,
+	autoplaySpeed: 2000,
+	dots: false,
+	infinite: true,
+	speed: 500,
+	arrows: true,
+	prevArrow: `<button class="arrow-button left-arrow" style="background-image: url('../../wp-content/themes/Wkode-cursos-pec-git/images/carousel-left.svg')"></button>`,
+	nextArrow: `<button class="arrow-button right-arrow" style="background-image: url('../../wp-content/themes/Wkode-cursos-pec-git/images/carousel-right.svg')"></button>`,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 2,
+			},
+		},
+		{
+			breakpoint: 800,
+			settings: {
+				slidesToShow: 1,
+			},
+		},
+	],
+});

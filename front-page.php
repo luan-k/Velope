@@ -96,14 +96,106 @@
 		</div>
 	</section>
 
-	<!-- <section class="testimonials">
-		<div class="container">
-			<h2 class="testimonials__title">
-				O que os clientes dizem sobre a Velope
-			</h2>
-			<p>Lorem ipsum dolor sit amet consectetur. Est ultricies felis iaculis fermentum. Facilisis facilisi neque nisi risus amet convallis. Cras ornare phasellus augue nibh tristique purus donec ipsum diam. Elit ligula nulla mi eget id lectus.</p>
+	<section class="testimonials" style="<?php echo 'background-image: url(' . get_theme_file_uri('./images/testimonials-bg.jpg') . ');' ?>">
+		<div class="px-12">
+			<div class="testimonials__header">
+				<h2 class="testimonials__title">
+					O que os clientes dizem sobre a <span>Velope</span>
+				</h2>
+				<p class="testimonials__text">Lorem ipsum dolor sit amet consectetur. Est ultricies felis iaculis fermentum. Facilisis facilisi neque nisi risus amet convallis. Cras ornare phasellus augue nibh tristique purus donec ipsum diam. Elit ligula nulla mi eget id lectus.</p>
+			</div>
+			<div class="testimonials__carousel">
+				<div class="testimonial__wrapper">
+					<div class="testimonial">
+						<img src="<?php
+						echo get_theme_file_uri('./images/depoimentos-1.jpg');
+						?>" alt="">
+						<p class="testimonial__text">
+							Lorem ipsum dolor sit amet consectetur. Nullam faucibus amet lobortis praesent phasellus. Feugiat eu pharetra pellentesque nunc mauris sodales sem.
+						</p>
+						<div class="testimonial__stars">
+							<?php
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							?>
+						</div>
+						<div class="testimonial__name">
+							Fulano Tal | Empresa tal
+						</div>
+					</div>
+				</div>
+				<div class="testimonial__wrapper">
+					<div class="testimonial">
+						<img src="<?php
+						echo get_theme_file_uri('./images/depoimentos-1.jpg');
+						?>" alt="">
+						<p class="testimonial__text">
+							Lorem ipsum dolor sit amet consectetur. Nullam faucibus amet lobortis praesent phasellus. Feugiat eu pharetra pellentesque nunc mauris sodales sem.
+						</p>
+						<div class="testimonial__stars">
+							<?php
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							?>
+						</div>
+						<div class="testimonial__name">
+							Fulano Tal | Empresa tal
+						</div>
+					</div>
+				</div>
+				<div class="testimonial__wrapper">
+					<div class="testimonial">
+						<img src="<?php
+						echo get_theme_file_uri('./images/depoimentos-1.jpg');
+						?>" alt="">
+						<p class="testimonial__text">
+							Lorem ipsum dolor sit amet consectetur. Nullam faucibus amet lobortis praesent phasellus. Feugiat eu pharetra pellentesque nunc mauris sodales sem.
+						</p>
+						<div class="testimonial__stars">
+							<?php
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							?>
+						</div>
+						<div class="testimonial__name">
+							Fulano Tal | Empresa tal
+						</div>
+					</div>
+				</div>
+				<div class="testimonial__wrapper">
+					<div class="testimonial">
+						<img src="<?php
+						echo get_theme_file_uri('./images/depoimentos-1.jpg');
+						?>" alt="">
+						<p class="testimonial__text">
+							Lorem ipsum dolor sit amet consectetur. Nullam faucibus amet lobortis praesent phasellus. Feugiat eu pharetra pellentesque nunc mauris sodales sem.
+						</p>
+						<div class="testimonial__stars">
+							<?php
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							echo file_get_contents(get_theme_file_path('./images/star.svg'));
+							?>
+						</div>
+						<div class="testimonial__name">
+							Fulano Tal | Empresa tal
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</section> -->
+	</section>
 
     <section class="instrutores pb-16 md:pb-32 pt-20 md:pt-44 relative" style="background-image: url(<?php echo get_theme_file_uri('./images/BackgroundSite.png')?>)">
         <div class="instrutores__wrapper relative slider slider_instrutores" data-anime="right">
