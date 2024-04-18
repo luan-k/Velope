@@ -254,4 +254,29 @@ nav {
 			flex-direction: column;
 		}
 	}
+	&.contact {
+		color: #101010;
+		.contact-title {
+			font-size: 5.084rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			@apply font-philosopher;
+		}
+		.wpforms-container {
+			width: 100%;
+			.wpforms-field {
+				label,
+				input,
+				textarea {
+					color: #101010;
+					font-family: "Hind Siliguri";
+					font-size: 1.4rem;
+					font-style: normal;
+					font-weight: 300;
+					line-height: normal;
+				}
+			}
+		}
+	}
 }

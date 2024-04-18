@@ -259,4 +259,20 @@
         </div>
     </section>
 
+	<section class="cursos-about-us contact" style="background-image: url(<?php echo get_theme_file_uri( './images/bg-contato.jpg' ); ?>)">
+		<div class="container">
+			<div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
+				<div class="image-wrapper">
+					<img src="<?php echo get_theme_file_uri('./images/contact-image.png') ?>" alt="Imagem quem somos">
+				</div>
+				<div class="content-wrapper">
+					<h2 class="contact-title">
+						Fale com a gente!
+					</h2>
+					 <?php echo do_shortcode('[wpforms id="108"]') ?>
+				</div>
+			</div>
+		</div>
+	</section>
+
 <?php get_footer(); ?>

@@ -20,7 +20,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-6 mt-9 md:mt-0 font-poppins" data-anime="right">
+            <div class="mt-9 md:mt-0 font-poppins" data-anime="right">
                 <?php echo do_shortcode('[wpforms id="108"]') ?>
 
             </div>
