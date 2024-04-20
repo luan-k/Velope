@@ -1,9 +1,10 @@
 
 
-            <footer class="page-footer bg-pec-graymid text-white font-poppins font-semibold pb-20" style="background-image: url(<?php echo get_theme_file_uri('./images/footer.jpg') ?>) ">
+            <footer class="footer"  >
+				<?php echo file_get_contents(get_theme_file_path('./images/footer-top.svg')); ?>
 
                 <!-- Footer Links -->
-                <div class="container text-center md:text-left text-lg font-semibold">
+                <div class="footer-content container text-center md:text-left text-lg font-semibold">
 
                     <div class="grid grid-cols-1 md:grid-cols-3 col-g gap-6">
 

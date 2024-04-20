@@ -97,7 +97,7 @@
 	</section>
 
 	<section class="testimonials" style="<?php echo 'background-image: url(' . get_theme_file_uri('./images/testimonials-bg.jpg') . ');' ?>">
-		<div class="px-12">
+		<div class="px-28">
 			<div class="testimonials__header">
 				<h2 class="testimonials__title">
 					O que os clientes dizem sobre a <span>Velope</span>
@@ -231,7 +231,7 @@
 		</div>
     </section>
 
-	<section class="cursos-about-us contact" style="background-image: url(<?php echo get_theme_file_uri( './images/bg-contato.jpg' ); ?>)">
+	<section class="cursos-about-us contact pb-32" style="background-image: url(<?php echo get_theme_file_uri( './images/bg-contato.jpg' ); ?>)">
 		<div class="container">
 			<div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
 				<div class="image-wrapper">
