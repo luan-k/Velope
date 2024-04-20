@@ -28,7 +28,7 @@
 						Há mais de 20 anos atuando no mercado automotivo,
 						com grande know how em manutenção preventiva no
 						segmento de transmissões automáticas e lubrificação,
-						o grupo PECMOTORS agora também possui cursos
+						a Velope agora também possui cursos
 						para aprimorar ainda mais a qualificação técnica.
 					</p>
 					<a href="/sobre-nos" class="wk-btn">
@@ -197,66 +197,38 @@
 		</div>
 	</section>
 
-    <section class="instrutores pb-16 md:pb-32 pt-20 md:pt-44 relative" style="background-image: url(<?php echo get_theme_file_uri('./images/BackgroundSite.png')?>)">
-        <div class="instrutores__wrapper relative slider slider_instrutores" data-anime="right">
-            <input id="radio-instrutores" type="radio" name="slider-instrutores" title="slide1" checked="checked" class="slider__nav radio-instrutores"/>
-            <input id="radio-instrutores-1" type="radio" name="slider-instrutores" title="slide2" class="slider__nav radio-instrutores"/>
-            <!-- <input id="radio-instrutores-2" type="radio" name="slider-instrutores" title="slide3" class="slider__nav radio-instrutores"/> -->
-            <div class="instrutores__slider-wrapper slider__inner slider__inner_instrutores">
-                <div class="instrutores__slide relative slider__contents" id="slide-1">
-                    <div class="instrutores__slide--wrapper">
-                        <div class="instrutores__slide--content-wrapper text-white" style="background-image: url(<?php echo get_theme_file_uri('./images/instrutor-1.png')?>)">
-                            <div class=" w-3/5">
-                                <h3 class="font-semibold uppercase instrutores__slide lg:text-5xl 2xl:text-7xl md:text-4xl text-lg font-poppins">
-                                    Nossos Instrutores:
-                                </h3>
-                                <h3 class="font-semibold instrutores__slide--title  lg:text-6xl 2xl:text-8xl md:text-4xl text-lg font-poppins text-pec-bluelight">
-                                    Ederson Luis Bilck
-                                </h3>
-                            </div>
-                            <p class="instrutores__slide--content text-xs md:text-2xl lg:text-3xl 2xl:text-4xl  w-3/5">
-                                Consultor técnico Pecmotors responsável pelo setor técnico, possui
-                                mais de 8 anos de experiência no ramo de Lubrificantes, transmissões
-                                e veículos híbridos, possui mais de 40 cursos de manutenção em
-                                transmissões, rede can, injeção, veículos híbridos e sistemas anexos,
-                                possui especializações nos Estados Unidos e México.
-                            </p>
-                            <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk text-xs md:text-4xl flex items-center justify-center bg-pec-bluedark text-white rounded md:rounded-2xl py-2 px-3 md:py-6 md:px-9 w-3/5 text-center">
-                                Veja Todos os Instrutores
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="instrutores__slide relative slider__contents" id="slide-2">
-                    <div class="instrutores__slide--wrapper">
-                        <div class="instrutores__slide--content-wrapper text-white" style="background-image: url(<?php echo get_theme_file_uri('./images/instrutor-2.png')?>)">
-                            <div class=" w-3/5">
-                                <h3 class="font-semibold uppercase instrutores__slide lg:text-5xl 2xl:text-7xl md:text-4xl text-lg font-poppins">
-                                    Nossos Instrutores:
-                                </h3>
-                                <h3 class="font-semibold instrutores__slide--title  lg:text-6xl 2xl:text-8xl md:text-4xl text-lg font-poppins text-pec-bluelight">
-                                    Luiz Gouveia
-                                </h3>
-                            </div>
-                            <p class="instrutores__slide--content text-xs md:text-2xl lg:text-3xl 2xl:text-4xl  w-3/5">
-                                Luiz Gouveia é Gerente comercial e técnico do Grupo Pecmotors,
-                                possui diversos cursos na área de gestão de pessoas e negócios,
-                                possui mais de 15 anos de experiencia em comercio e atendimento,
-                                especializando-se em lubrificantes e suas características,
-                                aplicações e normas. Especializado em veículos híbridos e
-                                elétricos assim como em transmissões automáticas.
-                            </p>
-                            <a href="<?php echo esc_url(site_url('/instrutores')); ?>" class="btn-wk text-xs md:text-4xl flex items-center justify-center bg-pec-bluedark text-white rounded md:rounded-2xl py-2 px-3 md:py-6 md:px-9 w-3/5 text-center">
-                                Veja Todos os Instrutores
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="instrutores__slide relative slider__contents" id="slide-3">
-                    3
-                </div>
-            </div>
-        </div>
+    <section class="instrutores " style="background-image: url(<?php echo get_theme_file_uri('./images/instructor-bg.jpg')?>)">
+		<div class="instrutores-carousel">
+			<div class="instrutor-wrapper">
+				<div class="instrutor">
+					<h3 class="instrutor-title">Ederson Luis Bilck</h3>
+					<p class="instrutor-description">
+						Consultor técnico Velope responsável pelo setor técnico, possui
+						mais de 8 anos de experiência no ramo de Lubrificantes, transmissões
+						e veículos híbridos, possui mais de 40 cursos de manutenção em
+						transmissões, rede can, injeção, veículos híbridos e sistemas anexos,
+						possui especializações nos Estados Unidos e México.
+					</p>
+					<a href="" class="instrutor-btn">Veja todos os instrutores</a>
+				</div>
+				<img src="<?php echo get_theme_file_uri('./images/instructor-1.png') ?>" alt="" srcset="" class="instrutor-img">
+			</div>
+			<div class="instrutor-wrapper">
+				<div class="instrutor">
+					<h3 class="instrutor-title">Luiz Gouveia</h3>
+					<p class="instrutor-description">
+						Luiz Gouveia é Gerente comercial e técnico Velope,
+						possui diversos cursos na área de gestão de pessoas e negócios,
+						possui mais de 15 anos de experiencia em comercio e atendimento,
+						especializando-se em lubrificantes e suas características,
+						aplicações e normas. Especializado em veículos híbridos e
+						elétricos assim como em transmissões automáticas.
+					</p>
+					<a href="" class="instrutor-btn">Veja todos os instrutores</a>
+				</div>
+				<img src="<?php echo get_theme_file_uri('./images/instructor-2.png') ?>" alt="" srcset="" class="instrutor-img">
+			</div>
+		</div>
     </section>
 
 	<section class="cursos-about-us contact" style="background-image: url(<?php echo get_theme_file_uri( './images/bg-contato.jpg' ); ?>)">

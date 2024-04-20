@@ -44,3 +44,15 @@ $(".testimonials__carousel").slick({
 		},
 	],
 });
+$(".instrutores-carousel").slick({
+	autoplay: false,
+	autoplaySpeed: 2000,
+	dots: true,
+	infinite: true,
+	speed: 500,
+	arrows: true,
+	prevArrow: `<button class="arrow-button left-arrow" style="background-image: url('../../wp-content/themes/Wkode-cursos-pec-git/images/carousel-left.svg')"></button>`,
+	nextArrow: `<button class="arrow-button right-arrow" style="background-image: url('../../wp-content/themes/Wkode-cursos-pec-git/images/carousel-right.svg')"></button>`,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+});
