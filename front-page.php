@@ -197,7 +197,7 @@
 		</div>
 	</section>
 
-    <section class="instrutores " style="background-image: url(<?php echo get_theme_file_uri('./images/instructor-bg.jpg')?>)">
+    <section class="instrutores " style="background-image: url(<?php echo get_theme_file_uri('./images/instructor-bg-alt.jpg')?>)">
 		<div class="instrutores-carousel">
 			<div class="instrutor-wrapper">
 				<div class="instrutor">
@@ -209,7 +209,7 @@
 						transmissões, rede can, injeção, veículos híbridos e sistemas anexos,
 						possui especializações nos Estados Unidos e México.
 					</p>
-					<a href="" class="instrutor-btn">Veja todos os instrutores</a>
+					<a href="/instrutores/" class="instrutor-btn">Veja todos os instrutores</a>
 				</div>
 				<img src="<?php echo get_theme_file_uri('./images/instructor-1.png') ?>" alt="" srcset="" class="instrutor-img">
 			</div>
@@ -224,7 +224,7 @@
 						aplicações e normas. Especializado em veículos híbridos e
 						elétricos assim como em transmissões automáticas.
 					</p>
-					<a href="" class="instrutor-btn">Veja todos os instrutores</a>
+					<a href="/instrutores/" class="instrutor-btn">Veja todos os instrutores</a>
 				</div>
 				<img src="<?php echo get_theme_file_uri('./images/instructor-2.png') ?>" alt="" srcset="" class="instrutor-img">
 			</div>
