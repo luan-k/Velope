@@ -18,9 +18,17 @@
                             <p class="footer-text">
                                 <i class="fab fa-whatsapp"></i> (41) 99681-0097
                             </p>
-                            <a class="footer-text" href="<?php echo esc_url(site_url('/contato')); ?>">
-                                <i class="far fa-envelope"></i> Enviar uma mensagem
-                            </a>
+							<p class="footer-text">
+								<a class="footer-text" href="<?php echo esc_url(site_url('/contato')); ?>">
+									<i class="far fa-envelope"></i> Enviar uma mensagem
+								</a>
+							</p>
+							<!-- instagram -->
+							<p class="footer-text">
+								<a target="_blank" href="https://www.instagram.com/velope.cursos/" class="footer-text">
+									<i class="fab fa-instagram"></i> Instagram
+								</a>
+							</p>
                             <hr class="white">
                             <h4 class="title-3 text-4xl font-poppins font-bold mb-6 title-intert mt-5">
                                 Onde Estamos:

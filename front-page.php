@@ -198,6 +198,7 @@
 
 
     <section class="instrutores " style="background-image: url(<?php echo get_theme_file_uri('./images/instructor-bg-alt.jpg')?>)">
+		<h2 class="instrutores__title text-orange-light my-28 text-8xl text-center font-philosopher font-black">Nossos Instrutores</h2>
 		<div class="instrutores-carousel">
 			<div class="instrutor-wrapper">
 				<div class="instrutor">
