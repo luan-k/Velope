@@ -8,8 +8,8 @@
 	overflow: visible;
 }
 .post-card {
-	min-height: 33rem;
 	height: 60vh;
+	min-height: 33rem;
 	transition: all 0.9s;
 }
 div.post-card {
@@ -22,23 +22,23 @@ a.post-card {
       margin-right: 1%;
     } */
 a.post-card {
+	overflow: hidden;
 	padding-bottom: 10%;
 	position: relative;
-	overflow: hidden;
 }
 .servicos-titulo {
 	color: var(--primaryColor);
-	text-align: center;
 	font-family: "Rajdhani", sans-serif !important;
-	text-transform: uppercase;
-	font-weight: 900 !important;
 	font-size: 1.9rem;
+	font-weight: 900 !important;
 	line-height: 1.9rem;
 	padding: 0 13%;
+	text-align: center;
+	text-transform: uppercase;
 }
 .servicos-texto {
-	font-family: Verdana;
 	color: #6b6b6b;
+	font-family: Verdana;
 	/* font-size: 0.7vw;
   display: flex;
   align-items: center;
@@ -49,17 +49,17 @@ a.post-card {
 	width: 100%;
 }
 .servicos-imagem {
-	width: auto !important;
+	align-items: center;
+	display: flex;
+	justify-content: center;
 	/* height: 40vh!important; */
 	/* max-width: none!important; */
 	margin-bottom: 10px;
 	/* max-height: 30vh; */
 	min-height: auto;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	min-width: 100%;
+	overflow: hidden;
+	width: auto !important;
 }
 .wraper-card {
 	height: 100%;
@@ -96,25 +96,25 @@ a.post-card:hover {
 	box-shadow: 0px 47px 46px 10px rgba(0, 0, 0, 0.71);
 }
 div.post-card > a.post-card::before {
+	border: solid var(--primaryColor) 2px;
 	content: "";
 	display: block;
 	height: 90%;
-	width: 84%;
+	left: 8%;
 	position: absolute;
 	top: 5%;
-	left: 8%;
-	z-index: 998;
 	transition: all 0.4s;
-	border: solid var(--primaryColor) 2px;
+	width: 84%;
+	z-index: 998;
 }
 .paginate-links-wraper {
 	color: var(--primaryColor);
-	text-align: center;
 	font-family: "Rajdhani", sans-serif !important;
-	text-transform: uppercase;
-	font-weight: 900 !important;
 	font-size: 1.8rem;
+	font-weight: 900 !important;
 	line-height: 1.6rem;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .paginate-links-wraper > .prev {
@@ -148,8 +148,8 @@ div.post-card > a.post-card::before {
 		font-size: 2.8vw;
 	}
 	.post-card {
-		min-height: 107vw;
 		height: 108vw;
+		min-height: 107vw;
 	}
 	div.post-card {
 		margin-bottom: 13%;
@@ -158,8 +158,8 @@ div.post-card > a.post-card::before {
 
 section.secao-pagina-sevicos {
 	margin-top: 5%;
-	min-width: 95%;
 	min-height: 100vh;
+	min-width: 95%;
 }
 div#pagina-linha-servicos {
 	min-height: 100vh;
@@ -180,8 +180,8 @@ div#pagina-grid-servicos {
 .vc_gitem-zone.vc_gitem-zone-a.servicos-coluna.pagina-sevicos-coluna.vc-gitem-zone-height-mode-auto.vc-gitem-zone-height-mode-auto-1-1
 	> .vc_gitem-zone-mini
 	> .vc_gitem_row.vc_row.vc_gitem-row-position-middle {
-	top: 50%;
 	bottom: auto;
+	top: 50%;
 }
 
 article#post-258 > .entry-header > h1.entry-title {
@@ -204,31 +204,32 @@ article#post-258 > header.entry-header.alignwide {
 /* ======================SOBRE==================== */
 /* ================================================= */
 section.single-featured-image {
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
-	min-width: 100%;
-	min-height: 60vh;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
 	align-content: center;
+	align-items: center;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
 	justify-content: flex-end;
+	min-height: 80vh;
+	min-width: 100%;
 }
 h1.title.title-page {
-	text-align: center;
-	padding: 5% 6%;
-	margin-bottom: -7.9%;
-	font-size: 2rem;
-	background: var(--pec-blue-light);
-	color: white;
+	color: #f5f6fe !important;
+	font-family: "Philosopher", sans-serif !important;
+	font-size: 4rem !important;
+	font-style: normal !important;
+	font-weight: 700 !important;
+	line-height: normal !important;
+	@apply font-philosopher;
 }
 .container.content {
-	margin-top: 20rem;
+	margin-top: 9rem;
 }
 .page-wraper {
-	background-color: #08061c;
+	background-color: #101010;
 	color: white;
 }
 
@@ -257,8 +258,8 @@ body:not(.home) .wysiwyg,
 		padding-left: 1.3rem;
 		& li {
 			list-style: disc;
-			padding-left: 0.9rem;
 			margin-left: 0.9rem;
+			padding-left: 0.9rem;
 		}
 	}
 	p {
@@ -327,8 +328,8 @@ body:not(.home) .wysiwyg,
 
 		li {
 			@apply relative;
-			padding-left: 2.25em;
 			margin-bottom: 1em;
+			padding-left: 2.25em;
 
 			&::before {
 				@apply block absolute;
@@ -342,8 +343,8 @@ body:not(.home) .wysiwyg,
 
 		li::before {
 			@apply font-bold top-0;
-			counter-increment: section;
 			content: counter(section) ".";
+			counter-increment: section;
 			left: 0.55em;
 			right: calc(100% - 1.5em);
 		}

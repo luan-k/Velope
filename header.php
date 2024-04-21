@@ -29,8 +29,8 @@
 						<span></span>
 						<span></span>
 					</button>
-					<ul class="header-wk__list">
-                        <li class="btn-nav <?php if (is_page('cursos-presenciais') OR get_post_type() == 'post') echo' current-menu-item' ?>"><a href="<?php echo esc_url(site_url('/cursos-presenciais')); ?>" class=" ">Cursos Presenciais </a></li>
+					<ul class="header-wk__list header-wk__list--right">
+                        <!-- <li class="btn-nav <?php if (is_page('cursos-presenciais') OR get_post_type() == 'post') echo' current-menu-item' ?>"><a href="<?php echo esc_url(site_url('/cursos-presenciais')); ?>" class=" ">Cursos Presenciais </a></li> -->
                         <li class="btn-nav <?php if (is_page('calendario-de-cursos')) echo' current-menu-item' ?>"><a href="<?php echo esc_url(site_url('/calendario-de-cursos')); ?>" class=" ">Calendario de Cursos </a></li>
                         <li class="btn-nav <?php if (is_page('instrutores') OR get_post_type() == 'instrutor') echo' current-menu-item' ?>"><a href="<?php echo esc_url(site_url('/instrutores')); ?>" class=" ">Instrutores </a></li>
                         <li class="btn-nav <?php if (is_page('contato')) echo' current-menu-item' ?>"><a href="<?php echo esc_url(site_url('/contato')); ?>" class=" ">Contato </a></li>

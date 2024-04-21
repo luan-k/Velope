@@ -4,7 +4,7 @@
 	}
 }
 .cursos {
-	background-color: white;
+	//background-color: white;
 
 	&__title {
 		color: #101010;
@@ -21,18 +21,19 @@
 		align-items: center;
 		display: flex;
 		flex-direction: row;
-		flex-wrap: nowrap;
-		gap: 4.1rem;
+		flex-wrap: wrap;
+		gap: 2.4rem;
 		justify-content: center;
 	}
 
 	&__curso {
+		background-color: white;
 		color: black;
-		min-height: 51rem;
+		//min-height: 51rem;
 		position: relative;
 		text-align: left;
 		transition: all 0.3s;
-		width: 33%;
+		width: 31%;
 		&-image-wrapper {
 			img {
 				height: auto;
@@ -88,7 +89,6 @@
 		&:hover {
 		}
 		&--title {
-			color: #202020;
 			font-size: 2.2rem;
 			font-style: normal;
 			font-weight: 700;
@@ -113,6 +113,9 @@
 				background: #c83c0d;
 			}
 		}
+		&--content {
+			font-size: 1.2rem;
+		}
 	}
 }
 @media (max-width: 500px) {
@@ -124,7 +127,7 @@
 	}
 }
 .cursos-page {
-	background-color: #08061c;
+	background-color: #101010;
 }
 
 @media (max-width: 1200px) {
