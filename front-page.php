@@ -46,7 +46,7 @@
 					<div class="number-card">
 						<?php echo file_get_contents(get_theme_file_path('./images/pencil.svg'));?>
 						<h2 class="number-card-title">
-							Mais de <span class="count-up">50</span> Cursos
+							Mais de <span class="count-up">500</span> Alunos
 						</h2>
 					</div>
 					<div class="number-card">
@@ -66,35 +66,6 @@
     	   <?php the_content(); ?>
 		</div>
     </section>
-
-
-	<section class="marcas">
-		<div class="container">
-			<h2 class="marcas__title" data-anime="top">
-				Confira nossos parceiros:
-			</h2>
-			<div class="marcas__carrousel max-w-full" data-anime="bottom">
-				<div class="marca">
-					<img src="<?php echo get_theme_file_uri('./images/1testimonials.png')?>" alt="Marca 1">
-				</div>
-				<div class="marca">
-					<img src="<?php echo get_theme_file_uri('./images/2testimonials.png')?>" alt="Marca 2">
-				</div>
-				<div class="marca">
-					<img src="<?php echo get_theme_file_uri('./images/3testimonials.png')?>" alt="Marca 3">
-				</div>
-				<div class="marca">
-					<img src="<?php echo get_theme_file_uri('./images/4testimonials.png')?>" alt="Marca 4">
-				</div>
-				<div class="marca">
-					<img src="<?php echo get_theme_file_uri('./images/5testimonials.png')?>" alt="Marca 5">
-				</div>
-				<div class="marca">
-					<img src="<?php echo get_theme_file_uri('./images/6testimonials.png')?>" alt="Marca 6">
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<section class="testimonials" style="<?php echo 'background-image: url(' . get_theme_file_uri('./images/testimonials-bg.jpg') . ');' ?>">
 		<div class="px-28">
@@ -196,6 +167,35 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="marcas">
+		<div class="container">
+			<h2 class="marcas__title" data-anime="top">
+				Confira nossos parceiros:
+			</h2>
+			<div class="marcas__carrousel max-w-full" data-anime="bottom">
+				<div class="marca">
+					<img src="<?php echo get_theme_file_uri('./images/1testimonials.png')?>" alt="Marca 1">
+				</div>
+				<div class="marca">
+					<img src="<?php echo get_theme_file_uri('./images/2testimonials.png')?>" alt="Marca 2">
+				</div>
+				<div class="marca">
+					<img src="<?php echo get_theme_file_uri('./images/3testimonials.png')?>" alt="Marca 3">
+				</div>
+				<div class="marca">
+					<img src="<?php echo get_theme_file_uri('./images/4testimonials.png')?>" alt="Marca 4">
+				</div>
+				<div class="marca">
+					<img src="<?php echo get_theme_file_uri('./images/5testimonials.png')?>" alt="Marca 5">
+				</div>
+				<div class="marca">
+					<img src="<?php echo get_theme_file_uri('./images/6testimonials.png')?>" alt="Marca 6">
+				</div>
+			</div>
+		</div>
+	</section>
+
 
     <section class="instrutores " style="background-image: url(<?php echo get_theme_file_uri('./images/instructor-bg-alt.jpg')?>)">
 		<div class="instrutores-carousel">

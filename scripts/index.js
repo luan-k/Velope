@@ -96,8 +96,8 @@ typingEffect();
 
 window.addEventListener("DOMContentLoaded", (event) => {
 	const counters = document.querySelectorAll(".count-up");
-	const finishNumbers = [20, 50];
-	const totalTime = 5000; // Total time for the counters to finish
+	const finishNumbers = [20, 500];
+	const totalTime = 5000;
 
 	const observer = new IntersectionObserver(
 		(entries) => {
