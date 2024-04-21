@@ -93,3 +93,38 @@ function deletingEffect() {
 }
 
 typingEffect();
+
+window.addEventListener("DOMContentLoaded", (event) => {
+	const counters = document.querySelectorAll(".count-up");
+	const finishNumbers = [20, 50];
+	const totalTime = 5000; // Total time for the counters to finish
+
+	const observer = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					const counter = entry.target;
+					const index = Array.from(counters).indexOf(counter); // Get the index of the current counter
+					const finishNumber = finishNumbers[index]; // Get the finish number for the current counter
+					const countSpeed = totalTime / finishNumber; // Calculate count speed for the current counter
+					let timelag;
+
+					for (let i = 0; i <= finishNumber; i++) {
+						timelag = i * countSpeed;
+
+						setTimeout(() => {
+							counter.innerHTML = i;
+						}, timelag);
+					}
+
+					observer.unobserve(counter);
+				}
+			});
+		},
+		{ threshold: 0.1 }
+	);
+
+	counters.forEach((counter) => {
+		observer.observe(counter);
+	});
+});

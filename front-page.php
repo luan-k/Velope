@@ -15,13 +15,13 @@
 		</div>
 	</section>
 
-	<section class="cursos-about-us" style="background-image: url(<?php echo get_theme_file_uri( './images/bg-quem-somos-2.png' ); ?>)">
+	<section class="cursos-about-us" style="background-image: url(<?php echo get_theme_file_uri( './images/quem-somos-bg-2.png' ); ?>)">
 		<div class="container">
-			<div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
-				<div class="image-wrapper">
-					<img src="<?php echo get_theme_file_uri('./images/about-us-image.png') ?>" alt="Imagem quem somos">
+			<div class="grid grid-cols-1 gap-24 lg:grid-cols-2">
+				<div class="image-wrapper" data-anime="left">
+					<img src="<?php echo get_theme_file_uri('./images/quem-somos-image.png') ?>" alt="Imagem quem somos">
 				</div>
-				<div class="content-wrapper">
+				<div class="content-wrapper" data-anime="right">
 					<?php echo file_get_contents(get_theme_file_path('./images/logo-icon.svg'));?>
 					<h1 class="cursos-about-us__title">Sobre a <span>Velope</span></h1>
 					<p>
@@ -40,13 +40,13 @@
 					<div class="number-card">
 						<?php echo file_get_contents(get_theme_file_path('./images/time.svg'));?>
 						<h2 class="number-card-title">
-							Há mais de 20 anos ensinando
+							Há mais de <span class="count-up">20</span> anos ensinando
 						</h2>
 					</div>
 					<div class="number-card">
 						<?php echo file_get_contents(get_theme_file_path('./images/pencil.svg'));?>
 						<h2 class="number-card-title">
-							Mais de X Cursos
+							Mais de <span class="count-up">50</span> Cursos
 						</h2>
 					</div>
 					<div class="number-card">
@@ -61,7 +61,7 @@
 	</section>
 
     <!-- cursos -->
-    <section class="cursos text-center text-white pb-16 md:pb-32 pt-20 md:pt-44 relative" >
+    <section class="cursos bg-white text-center text-white pb-16 md:pb-32 pt-20 md:pt-44 relative" >
 		<div class="container">
     	   <?php the_content(); ?>
 		</div>
@@ -98,13 +98,13 @@
 
 	<section class="testimonials" style="<?php echo 'background-image: url(' . get_theme_file_uri('./images/testimonials-bg.jpg') . ');' ?>">
 		<div class="px-28">
-			<div class="testimonials__header">
-				<h2 class="testimonials__title">
+			<div class="testimonials__header" data-anime="bottom">
+				<h2 class="testimonials__title" data-anime="bottom">
 					O que os clientes dizem sobre a <span>Velope</span>
 				</h2>
 				<p class="testimonials__text">Lorem ipsum dolor sit amet consectetur. Est ultricies felis iaculis fermentum. Facilisis facilisi neque nisi risus amet convallis. Cras ornare phasellus augue nibh tristique purus donec ipsum diam. Elit ligula nulla mi eget id lectus.</p>
 			</div>
-			<div class="testimonials__carousel">
+			<div class="testimonials__carousel"  data-anime="top">
 				<div class="testimonial__wrapper">
 					<div class="testimonial">
 						<img src="<?php
@@ -211,7 +211,7 @@
 					</p>
 					<a href="/instrutores/" class="instrutor-btn">Veja todos os instrutores</a>
 				</div>
-				<img src="<?php echo get_theme_file_uri('./images/instructor-1.png') ?>" alt="" srcset="" class="instrutor-img">
+				<img data-anime="right" src="<?php echo get_theme_file_uri('./images/instructor-1.png') ?>" alt="" srcset="" class="instrutor-img">
 			</div>
 			<div class="instrutor-wrapper">
 				<div class="instrutor">
@@ -226,7 +226,7 @@
 					</p>
 					<a href="/instrutores/" class="instrutor-btn">Veja todos os instrutores</a>
 				</div>
-				<img src="<?php echo get_theme_file_uri('./images/instructor-2.png') ?>" alt="" srcset="" class="instrutor-img">
+				<img  data-anime="right" src="<?php echo get_theme_file_uri('./images/instructor-2.png') ?>" alt="" srcset="" class="instrutor-img">
 			</div>
 		</div>
     </section>
@@ -234,12 +234,12 @@
 	<section class="cursos-about-us contact pb-32" style="background-image: url(<?php echo get_theme_file_uri( './images/bg-contato.jpg' ); ?>)">
 		<div class="container">
 			<div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
-				<div class="image-wrapper">
+				<div class="image-wrapper" data-anime="left">
 					<img src="<?php echo get_theme_file_uri('./images/contact-image.png') ?>" alt="Imagem quem somos">
 				</div>
-				<div class="content-wrapper">
+				<div class="content-wrapper" data-anime="right">
 					<h2 class="contact-title">
-						Fale com a gente!
+						Fale conosco!
 					</h2>
 					 <?php echo do_shortcode('[wpforms id="108"]') ?>
 				</div>

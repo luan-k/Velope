@@ -67,7 +67,7 @@ if ( ! $title || empty( $title ) ) {
         $pec_cursos_2_image 	 = get_the_post_thumbnail_url($post2->ID);
         $pec_cursos_2_link       = get_the_permalink( $post2 );
         ?>
-        <div class="cursos__curso" data-anime="left" >
+        <div class="cursos__curso" data-anime="right" >
             <a href="<?php echo $pec_cursos_2_link ?>" class="cursos__curso--link">
 				<div class="cursos__curso-image-wrapper">
 					<img src="<?php echo $pec_cursos_2_image; ?>" alt="<?= $alt; ?>" width="<?= $width; ?>" height="<?= $height; ?>" class="cursos__curso--img">

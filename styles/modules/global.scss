@@ -162,7 +162,7 @@ nav {
 .cursos-about-us {
 	@apply font-philosopher;
 	background-attachment: fixed;
-	background-blend-mode: screen, normal;
+	//background-blend-mode: screen, normal;
 	background-color: #141414;
 	background-position: center left;
 	background-repeat: no-repeat;
@@ -172,7 +172,8 @@ nav {
 		align-items: center;
 		display: flex;
 		img {
-			filter: drop-shadow(0px 0px 65.9px rgba(0, 0, 0, 0.7));
+			//filter: drop-shadow(0px 0px 65.9px rgba(0, 0, 0, 0.7));
+			border-radius: 3rem;
 		}
 	}
 	.cursos-about-us__title {
