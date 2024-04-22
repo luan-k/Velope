@@ -197,7 +197,7 @@
 	</section>
 
 
-    <section class="instrutores " style="background-image: url(<?php echo get_theme_file_uri('./images/instructor-bg-alt.jpg')?>)">
+    <section class="instrutores " style="background-image: url(<?php echo get_theme_file_uri('./images/fundoInstrutor.png')?>)">
 		<h2 class="instrutores__title text-orange-light my-28 text-8xl text-center font-philosopher font-black">Nossos Instrutores</h2>
 		<div class="instrutores-carousel">
 			<div class="instrutor-wrapper">
@@ -232,11 +232,11 @@
 		</div>
     </section>
 
-	<section class="cursos-about-us contact pb-32" style="background-image: url(<?php echo get_theme_file_uri( './images/bg-contato.jpg' ); ?>)">
+	<section class="cursos-about-us contact pb-32" style="">
 		<div class="container">
 			<div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
 				<div class="image-wrapper" data-anime="left">
-					<img src="<?php echo get_theme_file_uri('./images/contact-image.png') ?>" alt="Imagem quem somos">
+					<img src="<?php echo get_theme_file_uri('./images/contato.png') ?>" alt="Imagem quem somos">
 				</div>
 				<div class="content-wrapper" data-anime="right">
 					<h2 class="contact-title">
