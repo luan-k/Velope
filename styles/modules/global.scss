@@ -160,19 +160,19 @@ nav {
 }
 
 .cursos-about-us {
-	@apply font-philosopher;
 	background-attachment: fixed;
 	//background-blend-mode: screen, normal;
 	background-color: #141414;
 	background-position: center left;
 	background-repeat: no-repeat;
 	background-size: cover;
+	box-shadow: 0px 10px 21px -3px rgba(0, 0, 0, 0.27);
 	padding: 6rem 12rem;
+	@apply font-philosopher;
 	.image-wrapper {
 		align-items: center;
 		display: flex;
 		img {
-			//filter: drop-shadow(0px 0px 65.9px rgba(0, 0, 0, 0.7));
 			border-radius: 3rem;
 		}
 	}
@@ -233,6 +233,7 @@ nav {
 			align-items: center;
 			backdrop-filter: blur(2px);
 			background: rgba(60, 60, 60, 0.42);
+			box-shadow: 0px 10px 21px -3px rgba(0, 0, 0, 0.27);
 			color: #fff;
 			display: flex;
 			font-size: 1.8175rem;
@@ -245,6 +246,7 @@ nav {
 			@apply font-poppins;
 			h2 {
 				font-family: inherit;
+				white-space: nowrap;
 			}
 		}
 	}
@@ -259,6 +261,16 @@ nav {
 		background-color: #ededed;
 		color: #101010;
 		padding-bottom: 12rem;
+		@media (min-width: 1024px) {
+			padding: 12rem 12rem;
+		}
+		.image-wrapper {
+			display: block;
+			img {
+				bottom: -13rem;
+				position: absolute;
+			}
+		}
 		.contact-title {
 			font-size: 5.084rem;
 			font-style: normal;

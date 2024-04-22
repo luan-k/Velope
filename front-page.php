@@ -46,7 +46,7 @@
 					<div class="number-card">
 						<?php echo file_get_contents(get_theme_file_path('./images/pencil.svg'));?>
 						<h2 class="number-card-title">
-							Mais de <span class="count-up">500</span> Alunos
+							Mais de <span class="count-up">500</span> Alunos Formados
 						</h2>
 					</div>
 					<div class="number-card">
@@ -68,7 +68,7 @@
     </section>
 
 	<section class="testimonials" style="<?php echo 'background-image: url(' . get_theme_file_uri('./images/testimonials-bg.jpg') . ');' ?>">
-		<div class="px-28">
+		<div class="px-0 md:px-28">
 			<div class="testimonials__header" data-anime="bottom">
 				<h2 class="testimonials__title" data-anime="bottom">
 					O que os clientes dizem sobre a <span>Velope</span>
@@ -198,7 +198,7 @@
 
 
     <section class="instrutores " style="background-image: url(<?php echo get_theme_file_uri('./images/fundoInstrutor.png')?>)">
-		<h2 class="instrutores__title text-orange my-28 text-8xl text-center font-philosopher font-black">Nossos Instrutores</h2>
+		<h2 class="instrutores__title text-orange my-16 text-8xl text-center font-philosopher font-black">Nossos Instrutores</h2>
 		<div class="instrutores-carousel">
 			<div class="instrutor-wrapper">
 				<div class="instrutor">
@@ -232,11 +232,11 @@
 		</div>
     </section>
 
-	<section class="cursos-about-us contact pb-32" style="">
+	<section class="cursos-about-us contact pb-32" style="background-image: url(<?php echo get_theme_file_uri( './images/bg-contato.jpg' ); ?>)">
 		<div class="container">
 			<div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
-				<div class="image-wrapper" data-anime="left">
-					<img src="<?php echo get_theme_file_uri('./images/contato.png') ?>" alt="Imagem quem somos">
+				<div class="image-wrapper " data-anime="left">
+					<img class="hidden lg:block" src="<?php echo get_theme_file_uri('./images/contact.png') ?>" alt="Imagem quem somos">
 				</div>
 				<div class="content-wrapper" data-anime="right">
 					<h2 class="contact-title">
